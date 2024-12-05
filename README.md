@@ -1,6 +1,3 @@
-Claro! Aqui está um **README.md** completo e formatado para o seu repositório **MelodyStream**. Sinta-se à vontade para personalizá-lo conforme necessário.
-
----
 
 # 🎵 MelodyStream
 
@@ -26,6 +23,8 @@ Claro! Aqui está um **README.md** completo e formatado para o seu repositório 
 - **Explorar o Catálogo**: Navegue por um catálogo completo de músicas disponíveis para reprodução.
 - **Reprodução Não Bloqueante**: Execute músicas em segundo plano, permitindo que você continue interagindo com a aplicação enquanto a música toca.
 - **Interface Interativa**: Utilize um menu intuitivo para navegar pelas diferentes funcionalidades da aplicação.
+- **Importação Automática de Músicas**: Adicione todas as músicas de uma pasta específica ao catálogo automaticamente, sem reproduzi-las durante a importação.
+- **Navegação na Playlist**: Avance para a próxima música ou volte para a música anterior na playlist em reprodução.
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -64,12 +63,12 @@ Claro! Aqui está um **README.md** completo e formatado para o seu repositório 
 4. **Organize suas músicas:**
 
    - Crie uma pasta para armazenar suas músicas, por exemplo: `C:\Users\Jhonatan\Desktop\TRABALHO LINGUAGEM`.
-   - Adicione os arquivos de áudio (`.mp3`, `.wav`, etc.) nessa pasta.
+   - Adicione os arquivos de áudio (`.mp3`, `.wav`, `.ogg`, `.flac`, etc.) nessa pasta.
 
-5. **Atualize os caminhos das músicas no código:**
+5. **Atualize os caminhos das músicas no código (opcional):**
 
-   - Abra o arquivo `sistema_streaming.py`.
-   - No método `adicionar_musicas_iniciais`, certifique-se de que os caminhos dos arquivos de áudio correspondem aos locais onde você armazenou suas músicas.
+   - Se preferir adicionar músicas manualmente, abra o arquivo `sistema_streaming.py`.
+   - No método `adicionar_musicas_iniciais`, adicione instâncias da classe `Musica` com os caminhos corretos dos arquivos de áudio.
 
 ## 🚀 Como Usar
 
@@ -79,54 +78,134 @@ Claro! Aqui está um **README.md** completo e formatado para o seu repositório 
    python sistema_streaming.py
    ```
 
-2. **Interaja com o Menu:**
+2. **Insira o Caminho da Pasta de Músicas:**
 
-   - **1. Reproduzir uma música**: Digite o título da música que deseja ouvir.
-   - **2. Adicionar música a uma playlist**: Crie uma nova playlist e adicione músicas a ela.
-   - **3. Mostrar informações da playlist**: Visualize as músicas contidas em uma playlist específica.
-   - **4. Listar todas as músicas disponíveis**: Veja todas as músicas disponíveis no catálogo.
-   - **5. Parar reprodução atual**: Pare a música que está sendo reproduzida no momento.
-   - **6. Sair**: Encerre a aplicação. Qualquer música em reprodução será parada automaticamente.
+   - Quando solicitado, insira o caminho completo para a pasta onde suas músicas estão armazenadas.
+   - **Exemplo:** `C:\Users\Jhonatan\Desktop\TRABALHO LINGUAGEM`
+
+3. **Interaja com o Menu:**
+
+   - **1. Reproduzir uma música**: Digite parte do título da música que deseja ouvir.
+   - **2. Criar uma playlist**: Crie uma nova playlist.
+   - **3. Adicionar música a uma playlist**: Adicione músicas existentes do catálogo a uma playlist específica.
+   - **4. Remover música de uma playlist**: Remova músicas de uma playlist existente.
+   - **5. Mostrar informações da playlist**: Visualize as músicas contidas em uma playlist específica.
+   - **6. Reproduzir música de uma playlist**: Selecione e reproduza uma música de uma playlist.
+   - **7. Próxima música na playlist**: Avance para a próxima música na playlist em reprodução.
+   - **8. Música anterior na playlist**: Volte para a música anterior na playlist em reprodução.
+   - **9. Listar todas as músicas disponíveis**: Veja todas as músicas disponíveis no catálogo.
+   - **10. Parar reprodução atual**: Pare a música que está sendo reproduzida no momento.
+   - **11. Sair**: Encerre a aplicação. Qualquer música em reprodução será parada automaticamente.
 
 ### 📸 Exemplo de Uso
 
 ```
-Sistema de Streaming de Música (Orientado a Objetos)
-1. Reproduzir uma música
-2. Adicionar música a uma playlist
-3. Mostrar informações da playlist
-4. Listar todas as músicas disponíveis
-5. Parar reprodução atual
-6. Sair
-Escolha uma opção: 1
-Digite o título da música que deseja reproduzir: Imagine
-Iniciando reprodução: Imagine - John Lennon
+Bem-vindo ao Sistema de Streaming de Música!
+Por favor, insira o caminho para a pasta de músicas: C:\Users\Jhonatan\Desktop\TRABALHO LINGUAGEM
+Adicionada: mirros - Justin
+Adicionada: Bohemian Rhapsody - Queen
+Adicionada: Stairway to Heaven - Led Zeppelin
+Adicionada: Hotel California - Eagles
 
 Sistema de Streaming de Música (Orientado a Objetos)
 1. Reproduzir uma música
-2. Adicionar música a uma playlist
-3. Mostrar informações da playlist
-4. Listar todas as músicas disponíveis
-5. Parar reprodução atual
-6. Sair
-Escolha uma opção: 4
-
-Catálogo de Músicas Disponíveis:
-1. Imagine - John Lennon (3.1 minutos)
-2. Bohemian Rhapsody - Queen (5.55 minutos)
-3. Stairway to Heaven - Led Zeppelin (8.02 minutos)
-4. Hotel California - Eagles (6.3 minutos)
+2. Criar uma playlist
+3. Adicionar música a uma playlist
+4. Remover música de uma playlist
+5. Mostrar informações da playlist
+6. Reproduzir música de uma playlist
+7. Próxima música na playlist
+8. Música anterior na playlist
+9. Listar todas as músicas disponíveis
+10. Parar reprodução atual
+11. Sair
+Escolha uma opção: 2
+Digite o nome da nova playlist: Favorites
+Playlist 'Favorites' criada com sucesso.
 
 Sistema de Streaming de Música (Orientado a Objetos)
 1. Reproduzir uma música
-2. Adicionar música a uma playlist
-3. Mostrar informações da playlist
-4. Listar todas as músicas disponíveis
-5. Parar reprodução atual
-6. Sair
+2. Criar uma playlist
+3. Adicionar música a uma playlist
+4. Remover música de uma playlist
+5. Mostrar informações da playlist
+6. Reproduzir música de uma playlist
+7. Próxima música na playlist
+8. Música anterior na playlist
+9. Listar todas as músicas disponíveis
+10. Parar reprodução atual
+11. Sair
+Escolha uma opção: 3
+Digite o nome da playlist: Favorites
+Digite o título da música para adicionar: Bohemian Rhapsody
+Música 'Bohemian Rhapsody' adicionada à playlist 'Favorites'.
+
+Sistema de Streaming de Música (Orientado a Objetos)
+1. Reproduzir uma música
+2. Criar uma playlist
+3. Adicionar música a uma playlist
+4. Remover música de uma playlist
+5. Mostrar informações da playlist
+6. Reproduzir música de uma playlist
+7. Próxima música na playlist
+8. Música anterior na playlist
+9. Listar todas as músicas disponíveis
+10. Parar reprodução atual
+11. Sair
 Escolha uma opção: 6
-Parando reprodução de 'Imagine'.
+Digite o nome da playlist: Favorites
+
+Playlist: Favorites
+1. Bohemian Rhapsody - Queen (5.55 minutos)
+Digite o número da música que deseja reproduzir: 1
+Iniciando reprodução: Bohemian Rhapsody - Queen
+
+Sistema de Streaming de Música (Orientado a Objetos)
+1. Reproduzir uma música
+2. Criar uma playlist
+3. Adicionar música a uma playlist
+4. Remover música de uma playlist
+5. Mostrar informações da playlist
+6. Reproduzir música de uma playlist
+7. Próxima música na playlist
+8. Música anterior na playlist
+9. Listar todas as músicas disponíveis
+10. Parar reprodução atual
+11. Sair
+Escolha uma opção: 7
+Você está na última música da playlist.
+
+Sistema de Streaming de Música (Orientado a Objetos)
+1. Reproduzir uma música
+2. Criar uma playlist
+3. Adicionar música a uma playlist
+4. Remover música de uma playlist
+5. Mostrar informações da playlist
+6. Reproduzir música de uma playlist
+7. Próxima música na playlist
+8. Música anterior na playlist
+9. Listar todas as músicas disponíveis
+10. Parar reprodução atual
+11. Sair
+Escolha uma opção: 8
+Parando reprodução de 'Bohemian Rhapsody'.
+Nenhuma música está sendo reproduzida.
+
+Sistema de Streaming de Música (Orientado a Objetos)
+1. Reproduzir uma música
+2. Criar uma playlist
+3. Adicionar música a uma playlist
+4. Remover música de uma playlist
+5. Mostrar informações da playlist
+6. Reproduzir música de uma playlist
+7. Próxima música na playlist
+8. Música anterior na playlist
+9. Listar todas as músicas disponíveis
+10. Parar reprodução atual
+11. Sair
+Escolha uma opção: 11
 Encerrando o sistema. Até mais!
+Nenhuma música está sendo reproduzida.
 ```
 
 ## 🤝 Contribuição
@@ -146,7 +225,31 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICEN
 ## 📫 Contato
 
 - **Nome**: Jhonatan
-- **Email**: jhonatanalmeida99@gmail.com
+- **Email**: [jhonatanalmeida99@gmail.com](mailto:jhonatanalmeida99@gmail.com)
 - **LinkedIn**: [linkedin.com/in/jhonatan-almeida-89b52623b](https://www.linkedin.com/in/jhonatan-almeida-89b52623b/)
+
+---
+
+### 🔧 Melhorias Futuras
+
+Para aprimorar ainda mais o seu **MelodyStream**, considere as seguintes melhorias:
+
+1. **Filtros por Gênero:**
+   - Adicionar atributos de gênero às músicas e implementar funcionalidades de filtro no catálogo e nas playlists.
+
+2. **Interface Gráfica:**
+   - Implementar uma interface gráfica usando bibliotecas como `Tkinter`, `PyQt` ou `Kivy` para tornar a aplicação mais amigável e visualmente atraente.
+
+3. **Controle de Volume:**
+   - Adicionar funcionalidades para ajustar o volume da reprodução, permitindo que os usuários personalizem a experiência sonora.
+
+4. **Reprodução Aleatória e Repetição:**
+   - Implementar opções de reprodução aleatória e repetição de músicas ou playlists para uma experiência de audição mais dinâmica.
+
+5. **Metadata de Músicas:**
+   - Utilizar bibliotecas como `mutagen` para obter metadados mais precisos das músicas, permitindo uma melhor organização e exibição de informações.
+
+6. **Persistência de Dados:**
+   - Salvar playlists e configurações em arquivos ou banco de dados para que os usuários não percam suas configurações ao fechar a aplicação.
 
 ---
