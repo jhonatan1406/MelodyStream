@@ -102,10 +102,17 @@
 ```
 Bem-vindo ao Sistema de Streaming de Música!
 Por favor, insira o caminho para a pasta de músicas: C:\Users\Jhonatan\Desktop\TRABALHO LINGUAGEM
-Adicionada: mirros - Justin
-Adicionada: Bohemian Rhapsody - Queen
-Adicionada: Stairway to Heaven - Led Zeppelin
-Adicionada: Hotel California - Eagles
+Adicionada: Crawling [Official HD Music Video] - Linkin Park
+Adicionada: Imagine Dragons - Believer (Official Music Video)
+Adicionada: In The End [Official HD Music Video] - Linkin Park
+Adicionada: mirros - Desconhecido
+Adicionada: Numb (Official Music Video) [4K UPGRADE] – Linkin Park - Desconhecido
+Adicionada: NX Zero - Daqui Pra Frente (Tour Cedo ou Tarde Ao Vivo)
+Adicionada: Queen – Bohemian Rhapsody (Official Video Remastered) - Desconhecido
+Adicionada: Sia - Elastic Heart (TraduçãoLegendas)
+Adicionada: The Beatles - Come Together
+Adicionada: The Emptiness Machine (Official Music Video) - Linkin Park
+Adicionada: The Kinks - You Really Got Me (Official Audio)
 
 Sistema de Streaming de Música (Orientado a Objetos)
 1. Reproduzir uma música
@@ -137,8 +144,12 @@ Sistema de Streaming de Música (Orientado a Objetos)
 11. Sair
 Escolha uma opção: 3
 Digite o nome da playlist: Favorites
-Digite o título da música para adicionar: Bohemian Rhapsody
-Música 'Bohemian Rhapsody' adicionada à playlist 'Favorites'.
+Digite o título da música para adicionar: In The End
+
+Músicas Encontradas:
+1. In The End [Official HD Music Video] - Linkin Park (3.63 minutos)
+Escolha o número da música desejada: 1
+Música 'In The End [Official HD Music Video]' adicionada à playlist 'Favorites'.
 
 Sistema de Streaming de Música (Orientado a Objetos)
 1. Reproduzir uma música
@@ -156,9 +167,9 @@ Escolha uma opção: 6
 Digite o nome da playlist: Favorites
 
 Playlist: Favorites
-1. Bohemian Rhapsody - Queen (5.55 minutos)
+1. In The End [Official HD Music Video] - Linkin Park (3.63 minutos)
 Digite o número da música que deseja reproduzir: 1
-Iniciando reprodução: Bohemian Rhapsody - Queen
+Iniciando reprodução: In The End [Official HD Music Video] - Linkin Park
 
 Sistema de Streaming de Música (Orientado a Objetos)
 1. Reproduzir uma música
@@ -188,7 +199,7 @@ Sistema de Streaming de Música (Orientado a Objetos)
 10. Parar reprodução atual
 11. Sair
 Escolha uma opção: 8
-Parando reprodução de 'Bohemian Rhapsody'.
+Parando reprodução de 'In The End [Official HD Music Video] - Linkin Park (3.63 minutos)'.
 Nenhuma música está sendo reproduzida.
 
 Sistema de Streaming de Música (Orientado a Objetos)
